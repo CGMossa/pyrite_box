@@ -18,7 +18,11 @@ pub enum GameEventStep {
     PauseMs(u64),
     CallEvent(String),
     MovePlayer(PlayerMoveRequest, u64),
-    ChangeMap{index: usize, x: u32, y: u32},
+    ChangeMap {
+        index: usize,
+        x: u32,
+        y: u32,
+    },
 }
 
 #[derive(Clone, Copy, PartialEq, Eq)]

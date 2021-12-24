@@ -324,7 +324,7 @@ pub fn module_editor(egui_context: ResMut<EguiContext>, mut module_res: ResMut<M
                                 ui.label(format!("{} : Move Player", line));
                                 // TODO: Editor support
                             }
-                            GameEventStep::ChangeMap{..} => {
+                            GameEventStep::ChangeMap { .. } => {
                                 ui.label(format!("{} : Change Map", line));
                                 // TODO: Editor support
                             }
